@@ -1,7 +1,8 @@
-package com.okanaydin.hipoandroidinterviewexercise
+package com.okanaydin.hipoandroidinterviewexercise.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.okanaydin.hipoandroidinterviewexercise.R
 
 class MainActivity : AppCompatActivity() {
 
