@@ -46,8 +46,10 @@ class RecentPhotoFragment : Fragment() {
     private fun initLiveData() {
         viewModel.recentPhoto.observe(this,
             Observer<List<Photo?>> { list ->
-                list?.let {
-                    recentPhotoAdapter.setPhotoList(it)
+                if (list != null) {
+                    recentPhotoAdapter.setPhotoList(list)
+                } else {
+                    //Snack
                 }
             })
     }

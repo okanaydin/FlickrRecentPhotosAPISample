@@ -32,7 +32,7 @@ class PhotoViewModel : ViewModel() {
 
         call.enqueue(object : Callback<Recent> {
             override fun onFailure(call: Call<Recent>, t: Throwable) {
-                Log.e("TAG", "error")
+                recentPhoto.postValue(null)
             }
 
             override fun onResponse(call: Call<Recent>, response: Response<Recent>) {
