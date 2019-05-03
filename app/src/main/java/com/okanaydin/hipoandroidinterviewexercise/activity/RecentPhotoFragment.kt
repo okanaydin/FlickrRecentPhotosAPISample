@@ -9,6 +9,7 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.GridLayoutManager
+import com.google.android.material.snackbar.Snackbar
 import com.okanaydin.hipoandroidinterviewexercise.R
 import com.okanaydin.hipoandroidinterviewexercise.adapter.RecentPhotoAdapter
 import com.okanaydin.hipoandroidinterviewexercise.model.Photo
@@ -49,7 +50,13 @@ class RecentPhotoFragment : Fragment() {
                 if (list != null) {
                     recentPhotoAdapter.setPhotoList(list)
                 } else {
-                    //Snack
+                    view?.let {
+                        Snackbar.make(
+                            it,
+                            "Connection Failed!",
+                            Snackbar.LENGTH_SHORT
+                        ).show()
+                    }
                 }
             })
     }

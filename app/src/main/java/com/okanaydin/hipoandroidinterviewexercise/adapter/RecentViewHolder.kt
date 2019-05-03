@@ -16,13 +16,17 @@ class RecentViewHolder(parent: ViewGroup) : RecyclerView.ViewHolder(
     )
 ) {
 
-    fun bind(recentPhotoModel: Photo) {
+    fun bind(recentPhotoModel: Photo,onItemClickListener: (recentPhotoModel: Photo) -> Unit) {
 
         Glide
             .with(itemView.context)
             .load(recentPhotoModel.getPhotoUrl())
             .into(itemView.row_recent_img)
 
+
+        itemView.setOnClickListener { onItemClickListener(recentPhotoModel) }
     }
+
+
 
 }

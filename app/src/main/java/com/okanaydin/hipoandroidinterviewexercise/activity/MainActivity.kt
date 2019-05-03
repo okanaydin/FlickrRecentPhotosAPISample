@@ -45,7 +45,7 @@ class MainActivity : AppCompatActivity(), TabLayout.BaseOnTabSelectedListener<Ta
 
         tabLayout.setupWithViewPager(viewPager)
 
-        viewPager.currentItem = 1
+        viewPager.currentItem = 0
 
         tabLayout.addOnTabSelectedListener(this)
 

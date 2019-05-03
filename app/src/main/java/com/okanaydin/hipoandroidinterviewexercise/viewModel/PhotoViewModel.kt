@@ -1,6 +1,5 @@
 package com.okanaydin.hipoandroidinterviewexercise.viewModel
 
-import android.util.Log
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.okanaydin.hipoandroidinterviewexercise.model.Photo

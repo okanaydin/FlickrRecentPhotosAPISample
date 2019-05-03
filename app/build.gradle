@@ -44,14 +44,17 @@ dependencies {
     implementation "androidx.viewpager:viewpager:${libraries.viewpager_version}"
     implementation "com.google.android.material:material:${libraries.material_version}"
 
-    //RecyclerView
+    // RecyclerView
     implementation "androidx.recyclerview:recyclerview:${libraries.recyclerView_version}"
 
-    //Glide
+    // Glide
     implementation "com.github.bumptech.glide:glide:${libraries.glide_verison}"
     annotationProcessor "com.github.bumptech.glide:compiler:${libraries.glide_compiler_version}"
 
-    //Refrofit
+    // ImageViewer
+
+
+    // Refrofit
     implementation "com.squareup.retrofit2:retrofit:${libraries.retrofit_version}"
     implementation "com.squareup.retrofit2:converter-gson:${libraries.gson_version}"
     implementation "androidx.lifecycle:lifecycle-extensions:${libraries.lifecycle_ext_version}"
