@@ -6,17 +6,17 @@ import com.okanaydin.hipoandroidinterviewexercise.model.Photo
 
 class RecentPhotoAdapter : RecyclerView.Adapter<RecentViewHolder>() {
 
-    private var photoList: List<Photo> = ArrayList()
+    private var photoList: List<Photo?> = ArrayList()
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecentViewHolder = RecentViewHolder(parent)
 
     override fun getItemCount(): Int = photoList.size
 
     override fun onBindViewHolder(holder: RecentViewHolder, position: Int) {
-        holder.bind(photoList[position])
+        photoList[position]?.let { holder.bind(it) }
     }
 
-    fun setPhotoList(photoList: List<Photo>) {
+    fun setPhotoList(photoList: List<Photo?>) {
         this.photoList = photoList
         this.notifyDataSetChanged()
     }

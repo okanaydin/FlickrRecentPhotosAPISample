@@ -8,7 +8,7 @@ import retrofit2.http.Query
 
 interface GetRecentPhotoDataService {
 
-    @GET("flickr.photos.getRecent")
+    @GET("?method=flickr.photos.getRecent")
     fun getRecentData(
         @Query("api_key") apiKey: String,
         @Query("format") format: String,

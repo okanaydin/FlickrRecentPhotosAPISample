@@ -6,9 +6,9 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 object RetrofitInstance {
 
-    private const val BASE_URL = "https://api.flickr.com/services/rest/?method="
+    private const val BASE_URL = "https://api.flickr.com/services/rest/"
 
-    var service: RetrofitInstance
+    var service: GetRecentPhotoDataService
 
     init {
         val retrofit = Retrofit.Builder()
@@ -16,7 +16,7 @@ object RetrofitInstance {
             .addConverterFactory(GsonConverterFactory.create())
             .build()
 
-        service = retrofit.create(RetrofitInstance::class.java)
+        service = retrofit.create(GetRecentPhotoDataService::class.java)
 
     }
 }
