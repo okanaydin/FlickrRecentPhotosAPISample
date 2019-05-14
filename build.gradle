@@ -3,7 +3,7 @@ ext {
 
     configuration = [
 
-            package          : "com.okanaydin.hipoandroidinterviewexercise",
+            package          : "com.okanaydin.flickrRecentPhotosAPISample",
             compileSdkVersion: 28,
             targetSdkVersion : 28,
             minSdkVersion    : 16,
@@ -55,7 +55,7 @@ allprojects {
     repositories {
         google()
         jcenter()
-        maven { url "https://jitpack.io" }
+        maven { url "https://www.jitpack.io" }
     }
 }
 

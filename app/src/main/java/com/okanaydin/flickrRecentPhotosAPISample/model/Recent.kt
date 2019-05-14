@@ -1,4 +1,4 @@
-package com.okanaydin.hipoandroidinterviewexercise.model
+package com.okanaydin.flickrRecentPhotosAPISample.model
 
 import com.google.gson.annotations.SerializedName
 

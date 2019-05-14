@@ -1,10 +1,10 @@
-package com.okanaydin.hipoandroidinterviewexercise.adapter
+package com.okanaydin.flickrRecentPhotosAPISample.adapter
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
-import com.okanaydin.hipoandroidinterviewexercise.activity.RecentPhotoFragment
-import com.okanaydin.hipoandroidinterviewexercise.activity.SearchPhotoFragment
+import com.okanaydin.flickrRecentPhotosAPISample.activity.RecentPhotoFragment
+import com.okanaydin.flickrRecentPhotosAPISample.activity.SearchPhotoFragment
 
 class ViewPagerAdapter(fm: FragmentManager) : FragmentPagerAdapter(fm) {
 

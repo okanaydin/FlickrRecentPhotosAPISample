@@ -1,14 +1,14 @@
-package com.okanaydin.hipoandroidinterviewexercise.viewModel
+package com.okanaydin.flickrRecentPhotosAPISample.viewModel
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.okanaydin.hipoandroidinterviewexercise.model.Photo
-import com.okanaydin.hipoandroidinterviewexercise.model.Recent
-import com.okanaydin.hipoandroidinterviewexercise.remote.RetrofitInstance
-import com.okanaydin.hipoandroidinterviewexercise.util.API_KEY
-import com.okanaydin.hipoandroidinterviewexercise.util.DEFAULT_FORMAT
-import com.okanaydin.hipoandroidinterviewexercise.util.DEFAULT_PER_PAGE
-import com.okanaydin.hipoandroidinterviewexercise.util.NO_JSON_CALLBACK
+import com.okanaydin.flickrRecentPhotosAPISample.model.Photo
+import com.okanaydin.flickrRecentPhotosAPISample.model.Recent
+import com.okanaydin.flickrRecentPhotosAPISample.remote.RetrofitInstance
+import com.okanaydin.flickrRecentPhotosAPISample.util.API_KEY
+import com.okanaydin.flickrRecentPhotosAPISample.util.DEFAULT_FORMAT
+import com.okanaydin.flickrRecentPhotosAPISample.util.DEFAULT_PER_PAGE
+import com.okanaydin.flickrRecentPhotosAPISample.util.NO_JSON_CALLBACK
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response

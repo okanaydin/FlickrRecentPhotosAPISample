@@ -46,16 +46,18 @@ dependencies {
 
     // RecyclerView
     implementation "androidx.recyclerview:recyclerview:${libraries.recyclerView_version}"
+    implementation "androidx.cardview:cardview:${libraries.cardView_version}"
+
 
     // Glide
     implementation "com.github.bumptech.glide:glide:${libraries.glide_verison}"
     annotationProcessor "com.github.bumptech.glide:compiler:${libraries.glide_compiler_version}"
-
-    // ImageViewer
 
 
     // Refrofit
     implementation "com.squareup.retrofit2:retrofit:${libraries.retrofit_version}"
     implementation "com.squareup.retrofit2:converter-gson:${libraries.gson_version}"
     implementation "androidx.lifecycle:lifecycle-extensions:${libraries.lifecycle_ext_version}"
+
+    // TODO ImageViewer
 }

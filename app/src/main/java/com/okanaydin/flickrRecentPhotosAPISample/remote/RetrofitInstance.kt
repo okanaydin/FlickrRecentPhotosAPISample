@@ -1,4 +1,4 @@
-package com.okanaydin.hipoandroidinterviewexercise.remote
+package com.okanaydin.flickrRecentPhotosAPISample.remote
 
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory

@@ -1,4 +1,4 @@
-package com.okanaydin.hipoandroidinterviewexercise.model
+package com.okanaydin.flickrRecentPhotosAPISample.model
 
 import com.google.gson.annotations.SerializedName
 
@@ -22,8 +22,8 @@ data class Photo(
     val server: String?,
     @SerializedName("title")
     val title: String?
-){
-    fun getPhotoUrl():String{
+) {
+    fun getPhotoUrl(): String {
         return "https://farm$farm.staticflickr.com/$server/${id}_$secret.jpg"
     }
 }

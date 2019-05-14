@@ -1,6 +1,6 @@
-package com.okanaydin.hipoandroidinterviewexercise.remote
+package com.okanaydin.flickrRecentPhotosAPISample.remote
 
-import com.okanaydin.hipoandroidinterviewexercise.model.Recent
+import com.okanaydin.flickrRecentPhotosAPISample.model.Recent
 import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.Query

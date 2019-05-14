@@ -1,4 +1,4 @@
-package com.okanaydin.hipoandroidinterviewexercise.activity
+package com.okanaydin.flickrRecentPhotosAPISample.activity
 
 
 import android.os.Bundle
@@ -7,7 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 
-import com.okanaydin.hipoandroidinterviewexercise.R
+import com.okanaydin.flickrRecentPhotosAPISample.R
 
 class FullScreenFragment : Fragment() {
 
@@ -16,5 +16,5 @@ class FullScreenFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_full_screen, container, false)
     }
 
-
+// TODO FullScreenFragment
 }

@@ -1,12 +1,12 @@
-package com.okanaydin.hipoandroidinterviewexercise.activity
+package com.okanaydin.flickrRecentPhotosAPISample.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import androidx.viewpager.widget.ViewPager
 import com.google.android.material.tabs.TabLayout
-import com.okanaydin.hipoandroidinterviewexercise.R
-import com.okanaydin.hipoandroidinterviewexercise.adapter.ViewPagerAdapter
+import com.okanaydin.flickrRecentPhotosAPISample.R
+import com.okanaydin.flickrRecentPhotosAPISample.adapter.ViewPagerAdapter
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity(), TabLayout.BaseOnTabSelectedListener<TabLayout.Tab>, ViewPager.OnPageChangeListener {

@@ -1,4 +1,4 @@
-package com.okanaydin.hipoandroidinterviewexercise
+package com.okanaydin.flickrRecentPhotosAPISample
 
 import org.junit.Test
 

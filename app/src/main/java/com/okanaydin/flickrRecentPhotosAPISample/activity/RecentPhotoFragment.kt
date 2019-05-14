@@ -1,26 +1,27 @@
-package com.okanaydin.hipoandroidinterviewexercise.activity
+package com.okanaydin.flickrRecentPhotosAPISample.activity
 
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.GridLayoutManager
 import com.google.android.material.snackbar.Snackbar
-import com.okanaydin.hipoandroidinterviewexercise.R
-import com.okanaydin.hipoandroidinterviewexercise.adapter.RecentPhotoAdapter
-import com.okanaydin.hipoandroidinterviewexercise.model.Photo
-import com.okanaydin.hipoandroidinterviewexercise.viewModel.PhotoViewModel
+import com.okanaydin.flickrRecentPhotosAPISample.R
+import com.okanaydin.flickrRecentPhotosAPISample.adapter.RecentPhotoAdapter
+import com.okanaydin.flickrRecentPhotosAPISample.model.Photo
+import com.okanaydin.flickrRecentPhotosAPISample.viewModel.PhotoViewModel
 import kotlinx.android.synthetic.main.fragment_recent_photo.*
+
 
 class RecentPhotoFragment : Fragment() {
 
     private lateinit var viewModel: PhotoViewModel
-
-    private val recentPhotoAdapter = RecentPhotoAdapter()
+    private lateinit var recentPhotoAdapter: RecentPhotoAdapter
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
 
@@ -31,7 +32,13 @@ class RecentPhotoFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+
         viewModel = ViewModelProviders.of(this).get(PhotoViewModel::class.java)
+
+        recentPhotoAdapter = RecentPhotoAdapter(mutableListOf()) {
+
+            Toast.makeText(activity, it!!.getPhotoUrl(), Toast.LENGTH_SHORT).show()
+        }
 
         recylerView_recentPhotoList.apply {
             layoutManager = GridLayoutManager(context, 2)
